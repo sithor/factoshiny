@@ -5,6 +5,7 @@ if(!require(pacman)) install.packages("pacman")
 ## installs packages required and makes functions available
 pacman::p_load(magrittr, skimr, FactoMineR, Factoshiny, rio)
 
+
 bloods <- rio::import("./data/Blood Results_baseline.xlsx", na = "NA")
 
 ## no duplicated participant values
